@@ -52,6 +52,7 @@ public class FindNumberOfIterationToFlipMatrix {
 
         while(!queue.isEmpty()){
             int size =  queue.size();
+            boolean flipped_once = false;
             boolean countIteration = false;
             for(int i =0;i< size;i++){
                 Position position = queue.poll();
